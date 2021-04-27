@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Finder</title>
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+      <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id = "home-nav-item" class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="map-nav-item" class="nav-link" href="#">Map</a>
+              </li>
+              <li class="nav-item">
+                <a id="shop-nav-item" class="nav-link" href="#">Shops</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="container">
+
+            <!-- City Search Bar + Header -->
+            <div class="row" id="form-container">
+                <form class="col s12">
+                    <header>
+                        <div class="header-wrapper">
+                            <h1>Find a Coffee Shop Near You</h1>
+                        </div>
+                    </header>
+
+                    <div class="row" id="location-row">
+                        <div class="col s6" id="inputCol">
+
+                            <!-- User's Input -->
+                            <div class="input-field">
+                                <input type="text" class="form-control validate" id="city-name" aria-label="Search"
+                                    placeholder="Enter City Name">
+                                <label for="city-name"></label>
+                                <i class="waves-effect waves-light btn searchBtn" id="searchBtn"><span
+                                        class="fa fa-search"></span></i>
+
+                                <i class="waves-effect waves-light btn searchBtn" id="locationBtn">Search Near You<span class="fa fa-map-marker"></span></i>
+                            </div>
+
+                            <!-- Showing locations INFO -->
+                            <div class="row" id="day-info-wrapper">
+                                <div class="col s9">
+                                    <div class="row" id="current-date"></div>
+                                    <div class="row" id="current-city"></div>
+                                    <div class="col" id="temp"></div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="row" id="current-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- break line -->
+            <hr>
+
+
+            <!-- Footer -->
+            <footer class="page-footer" id="footer">
+                <div class="footer-copyright">
+                    <div class="container" style="text-align:center;">Developed by Marty Miloslavich
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>

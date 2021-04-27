@@ -1,0 +1,101 @@
+
+body {
+  /* locks website width but not viewing width */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #CBBF7A;
+  min-width: 28em;
+} 
+
+/* Sticky Footer */
+main {
+  flex: 1 0 auto;
+} 
+
+/* Form Styling */
+#form-container {
+  height: 100%;
+  width: 100%; 
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background-image: url('CoffeeBackground.jpg');
+  background-size: cover; 
+  background-position: center;
+  overflow: inherit;
+}
+
+/* Header Styling */
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+#location-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+/* Input Styling */
+#city-name {
+  width: 80%;
+  color: white;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#inputCol {
+  margin-top:0px;
+  margin-left: 0px;
+  padding-top:0px;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color:white;
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+ input::placeholder {
+  color:white;
+}
+
+/* Button Styling */
+#searchBtn {
+  position: absolute;
+  height: 50%;
+  min-height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Daily Info Styling */
+#day-info-wrapper {
+  width: 100%;
+}
+  
+/* Footer styling*/
+#footer {
+  background-color: #584D3D;
+}

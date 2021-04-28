@@ -5,14 +5,57 @@ body {
   min-height: 100vh;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #CBBF7A;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  background-color: rgb(32, 30, 19);
   min-width: 28em;
 } 
+.navbar {
+  position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:rgba(255,255,255,0.9);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 /* Sticky Footer */
 main {
   flex: 1 0 auto;
 } 
+/* .header {
+    width: 20px;
+    height: 10px;
+} */
+
+/* Resize images */
+.header img {
+    width: 15%;
+    height: 10%;
+}
 
 /* Form Styling */
 #form-container {
@@ -20,7 +63,7 @@ main {
   width: 100%; 
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background-image: url('CoffeeBackground.jpg');
+  background-image: url("Coffee Background.jpg");
   background-size: cover; 
   background-position: center;
   overflow: inherit;
@@ -63,6 +106,7 @@ main {
   margin-top:0px;
   margin-left: 0px;
   padding-top:0px;
+  /* background-color: black; */
   overflow: hidden;
 }
 
@@ -85,14 +129,63 @@ input::placeholder {
   height: 50%;
   min-height: 20px;
   line-height: 20px;
+  background-color: tan;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
+#locationBtn {
+  background-color: tan;
+}
+
 /* Daily Info Styling */
 #day-info-wrapper {
   width: 100%;
+}
+
+#current-date {
+  margin-left: 3.5rem;
+  color: white;
+}
+
+#current-city {
+  margin-left: 3.5rem;
+  color: white;
+}
+
+#temp {
+  margin-left: 2.75rem;
+  color: white;
+}
+
+/* Map & Review Rows */
+#map-container, #reviews-container {
+display: none;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgb(32, 30, 19);
+}
+
+.card-title {
+  text-align: center;
+}
+
+#reviews-title-container {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+#reviews-title {
+  font-size: 32px;
+}
+
+/* Google map styling*/
+#map {
+height: 400px;
+width: 100%;
 }
   
 /* Footer styling*/

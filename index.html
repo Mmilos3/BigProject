@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop Finder</title>
+    <title>Local Coffee Shop Locator</title>
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" href="style.css">
     <!--Import Google Icon Font-->
@@ -18,8 +18,26 @@
 
 <body>
     <main>
+    <!-- <h1 style="color:white;">Coffee Shop Locator</h1> -->
+    <div class="header">
+      <img src="coff_bg.jpg" alt="logo" />
+    </div>
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a id = "home-nav-item" class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a id="map-nav-item" class="nav-link" href="#">Map</a>
+      </li>
+      <li class="nav-item">
+        <a id="shop-nav-item" class="nav-link" href="#">Shops</a>
+      </li>
+      <li class="nav-item">
+        <a id="about-nav-item" class="nav-link" href="#">About</a>
+      </li>
+    </ul>
       <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,11 +53,14 @@
               <li class="nav-item">
                 <a id="shop-nav-item" class="nav-link" href="#">Shops</a>
               </li>
+              <li class="nav-item">
+                <a id="about-nav-item" class="nav-link" href="#">About</a>
+              </li>
             </ul>
           </div>
         </div>
-      </nav>
-        <div class="container">
+      </nav> -->
+        <div id="body-container" class="container">
 
             <!-- City Search Bar + Header -->
             <div class="row" id="form-container">
@@ -83,6 +104,27 @@
             <!-- break line -->
             <hr>
 
+            <!-- Map Display with options -->
+            <div class="row" id="map-container">
+                <div class="card" style="background-color: #9F956C;">
+                    <div class="card-image">
+                        <!-- googleMap -->
+                    </div>
+                    <div class="card-content" id="map"></div>
+                </div>
+            </div>
+
+            <!-- List of options with details with no more than 10 -->
+            <div class="row" id="reviews-container">
+                <div class="card" style="background-color: #9F956C;">
+                    <div class="card-content white-text" id="reviews-title-container">
+                        <span class="card-title" id="reviews-title"><strong>Reviews:</strong></span>
+                    </div>
+                    <div class="card-action">
+                        <div id="reviews"></div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer -->
             <footer class="page-footer" id="footer">
@@ -93,6 +135,18 @@
             </footer>
         </div>
     </main>
+<!-- Calling Javascript files -->
+<!-- Google API -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Google API initial map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAS2x02bx7VMiqvBnO4mHdYrY2s7N2FSw_KEY&callback=initMap"></script>
+<!-- Google API places library -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAS2x02bx7VMiqvBnO4mHdYrY2s7N2FSw&libraries=places"></script>
+<!-- Moment JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
